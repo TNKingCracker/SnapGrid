@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Text, DateTime, Boolean, ForeignKey, JSON
+from sqlalchemy import Column, Integer, String, Text, DateTime, Boolean, ForeignKey, JSON, UniqueConstraint
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from app.db.database import Base
@@ -42,7 +42,7 @@ class Like(Base):
     post_id = Column(Integer, ForeignKey("posts.id"), nullable=False, index=True)
     created_at = Column(DateTime, default=datetime.utcnow)
 
-    __table_args__ = ({"unique_constraint": "unique_like"},)
+    __table_args__ = (UniqueConstraint('user_id', 'post_id', name='unique_like'),)
 
     user = relationship("User", back_populates="likes")
     post = relationship("Post", back_populates="likes")

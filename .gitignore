@@ -1,0 +1,68 @@
+```
+# Compiled and build artifacts
+*.class
+*.o
+*.obj
+*.out
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.so
+*.dll
+*.exe
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+.env
+.env.local
+*.env.*
+
+# Build directories
+dist/
+build/
+target/
+.gradle/
+
+# Python specific
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.so
+.libs/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Android/Kotlin
+*.class
+*.dex
+*.aar
+*.apk
+local.properties
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+```
