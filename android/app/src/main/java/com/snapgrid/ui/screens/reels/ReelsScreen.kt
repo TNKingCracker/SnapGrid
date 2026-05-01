@@ -109,7 +109,7 @@ fun ReelItem(
                     Icon(Icons.Filled.BookmarkBorder, contentDescription = "Save")
                 }
             }
-            if (!reel.caption.isNullOrBlank())) {
+            if (!reel.caption.isNullOrBlank()) {
                 Text(
                     text = reel.caption,
                     modifier = Modifier.padding(8.dp)
